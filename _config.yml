@@ -50,13 +50,13 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
   enable: true
-  preprocess: false
+  preprocess: true
   line_number: true
   tab_replace: ''
 

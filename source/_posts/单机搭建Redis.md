@@ -14,7 +14,7 @@ typora-root-url: ./
 
 **下载方式**
 
-可以从[此处](https://download.redis.io/releases/ )下载，然后在虚拟机中解压或者使用命令下载
+可以从[此处](https://download.redis.io/releases/ )下载或者使用命令下载
 
 ```sh
 wget https://download.redis.io/releases/redis-6.2.7.tar.gz
