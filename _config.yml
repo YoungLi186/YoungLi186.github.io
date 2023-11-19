@@ -55,8 +55,8 @@ highlight:
   wrap: true
   hljs: false
 prismjs:
-  enable: false
-  preprocess: true
+  enable: true
+  preprocess: false
   line_number: true
   tab_replace: ''
 
@@ -101,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: delicate
+theme: insnow
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
