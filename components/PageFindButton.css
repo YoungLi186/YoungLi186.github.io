@@ -1,0 +1,32 @@
+.pagefind-modal {
+    transition-property: opacity, display;
+    transition-duration: 200ms;
+    transition-behavior: allow-discrete;
+    display: none;
+    opacity: 0;
+}
+
+.pagefind-modal-open {
+    display: block;
+    opacity: 1;
+}
+
+@starting-style {
+    .pagefind-modal-open {
+        opacity: 0;
+    }
+}
+
+.pagefind-modal .pagefind-ui__drawer {
+    max-height: calc(100vh - 6.5em);
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+}

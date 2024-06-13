@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        padding: 0.5rem 0;
+        text-wrap: balance;
+    }
+    h1,
+    h1 * {
+        @apply text-3xl;
+    }
+    h2,
+    h2 * {
+        @apply text-2xl;
+    }
+    h3,
+    h3 * {
+        @apply text-xl;
+    }
+    h4,
+    h4 * {
+        @apply text-lg;
+    }
+    h5,
+    h5 * {
+        @apply text-base;
+    }
+    h6,
+    h6 * {
+        @apply text-sm;
+    }
+}
+
+a {
+    @apply text-blue-500 no-underline;
+}
+
+html {
+    color: #000;
+    background-color: #fff;
+}
+
+html.dark {
+    /* @apply bg-slate-800 text-gray-300; */
+    color: var(--color-fg-default);
+    background-color: var(--color-canvas-default);
+
+    a {
+        @apply text-sky-600;
+    }
+}
+
+* {
+    transition:
+        color 0.15s,
+        background-color 0.3s;
+}
+
+html {
+    text-wrap: pretty;
+    scroll-behavior: smooth;
+    scroll-timeline: --html-scroll-timeline block;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        Fira Sans,
+        Droid Sans,
+        Helvetica Neue,
+        sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-purple-50;
+}
+
+::-webkit-scrollbar {
+    @apply h-2 w-2;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply rounded bg-neutral-400 hover:bg-neutral-500;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.loader {
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: 0 0 0 0 #0004;
+    animation: l2 1.5s infinite linear;
+    position: relative;
+}
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 #0004;
+    animation: inherit;
+    animation-delay: -0.5s;
+}
+.loader:after {
+    animation-delay: -1s;
+}
+@keyframes l2 {
+    100% {
+        box-shadow: 0 0 0 40px #0000;
+    }
+}

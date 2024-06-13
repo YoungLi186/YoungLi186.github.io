@@ -1,0 +1,41 @@
+.BackToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    --size: 38px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    background: var(--color-canvas-subtle);
+    border: solid 1px var(--color-border-default);
+    display: grid;
+    place-items: center;
+    user-select: none;
+    cursor: pointer;
+    /**
+    // Make sure we have set corresponding scroll-timeline property on html element
+    html {
+        scroll-timeline: --html-scroll-timeline block;
+    }
+    */
+    animation-timeline: --html-scroll-timeline;
+    animation-name: BackToTopKeyFrames;
+    transition: transform 150ms;
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes BackToTopKeyFrames {
+    0%,
+    10% {
+        opacity: 0;
+        pointer-events: none;
+    }
+    10.001% {
+        pointer-events: auto;
+    }
+    25% {
+        opacity: 1;
+    }
+}

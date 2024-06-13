@@ -1,0 +1,24 @@
+.wl-comment {
+    /* reset waline style */
+    .wl-panel {
+        margin: 0;
+    }
+    .wl-editor,
+    .wl-input {
+        transition-property: background-color, color;
+    }
+    .wl-editor {
+        padding: 0 2px;
+    }
+}
+
+// https://github.com/bent10/marked-extensions
+.markdown-alert {
+    .markdown-alert-title {
+        margin: 0;
+        margin-bottom: 4px;
+        > svg {
+            margin-right: 6px;
+        }
+    }
+}
