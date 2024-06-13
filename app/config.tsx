@@ -1,5 +1,5 @@
 export const name = "Young"
-export const github = "Young186"
+export const github = "YoungLi186"
 export const siteTitle = "Young's blog"
 
 // optional

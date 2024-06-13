@@ -70,7 +70,7 @@ typora-root-url: ./
 
 服务端代码
 
-```java
+```java ?name=PostObject.java
     @GetMapping("/getPolicy")
     public ResponseDO getPolicy() throws UnsupportedEncodingException, JSONException {
         // host的格式为 bucketname.endpoint
